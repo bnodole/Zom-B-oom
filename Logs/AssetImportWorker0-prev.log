@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.8f1 (1c7db571dde0) revision 1867189'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 16068 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Binod" at "2026-02-24T11:22:29.3356798Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Binod" at "2026-02-24T07:36:32.3770307Z"
 System  architecture: x64
 Process architecture: x64
-Date: 2026-02-24T07:36:32Z
+Date: 2026-02-24T11:22:29Z
 
 COMMAND LINE ARGUMENTS:
 D:\Unity\6000.3.8f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ D:/UnityClass/Zom-b-oom
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56043
+53998
 -licensingIpc
 LicenseClient-Binod
 -job-worker-count
@@ -67,14 +67,14 @@ D:/UnityClass/Zom-b-oom
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [21324]  Target information:
+Player connection [7444]  Target information:
 
-Player connection [21324]  * "[IP] 192.168.18.221 [Port] 0 [Flags] 2 [Guid] 3126904348 [EditorId] 3126904348 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-67VTHVRN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [7444]  * "[IP] 192.168.1.68 [Port] 0 [Flags] 2 [Guid] 3799695208 [EditorId] 3799695208 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-67VTHVRN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [21324]  * "[IP] 192.168.137.1 [Port] 0 [Flags] 2 [Guid] 3126904348 [EditorId] 3126904348 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-67VTHVRN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [7444]  * "[IP] 192.168.137.1 [Port] 0 [Flags] 2 [Guid] 3799695208 [EditorId] 3799695208 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-67VTHVRN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [21324] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [21324] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [7444] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [7444] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -86,7 +86,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 4.72 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 4.25 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.8f1 (1c7db571dde0)
 [Subsystems] Discovering subsystems at path D:/Unity/6000.3.8f1/Editor/Data/Resources/UnitySubsystems
@@ -104,22 +104,20 @@ Initialize mono
 Mono path[0] = 'D:/Unity/6000.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/6000.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/6000.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56048
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56860
 Begin MonoManager ReloadAssembly
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              7f5f46175d944bf3b0b27a55a345b41b
+  Correlation Id:          2c37c849d7aecdc0c21a8ccdef0fae37
+  External correlation Id: 417224039468245585
+  Machine Id:              a597XLbd5NXm8tjUS2kr2LE3GSg=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Binod" (connect: 0.00s, validation: 0.00s, handshake: 1.64s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Binod-notifications" at "2026-02-24T11:22:30.9787768Z"
+[Licensing::Module] Licensing Background thread has ended after 1.64s
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/6000.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/Unity/6000.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-[Licensing::Module] Licensing is not yet initialized.
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.17.4+4293ba1
-  Session Id:              d0db46a3cc53407e93d00687d6f180c4
-  Correlation Id:          cfc808a774f39a0f870f4cad3423e070
-  External correlation Id: 3910189220359412326
-  Machine Id:              a597XLbd5NXm8tjUS2kr2LE3GSg=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Binod" (connect: 0.00s, validation: 0.00s, handshake: 1.75s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Binod-notifications" at "2026-02-24T07:36:34.13092Z"
-[Licensing::Module] Licensing Background thread has ended after 1.75s
-[Licensing::Module] Licensing is initialized (took 0.11s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 18968353892640-UnityPersXXXX
@@ -129,44 +127,44 @@ Register platform support module: D:/Unity/6000.3.8f1/Editor/Data/PlaybackEngine
 Register platform support module: D:/Unity/6000.3.8f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
 [Licensing::Client] Successfully resolved entitlement details
 Register platform support module: D:/Unity/6000.3.8f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.143158 seconds.
-- Loaded All Assemblies, in  1.049 seconds
+Registered in 0.016151 seconds.
+- Loaded All Assemblies, in  0.868 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 416 ms
+Android Extension - Scanning For ADB Devices 471 ms
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.374 seconds
-Domain Reload Profiling: 2423ms
-	BeginReloadAssembly (319ms)
+- Finished resetting the current domain, in  1.295 seconds
+Domain Reload Profiling: 2162ms
+	BeginReloadAssembly (315ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (75ms)
-	RebuildNativeTypeToScriptingClass (22ms)
-	initialDomainReloadingComplete (225ms)
-	LoadAllAssembliesAndSetupDomain (406ms)
-		LoadAssemblies (320ms)
+	RebuildCommonClasses (82ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (103ms)
+	LoadAllAssembliesAndSetupDomain (348ms)
+		LoadAssemblies (316ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (398ms)
-			TypeCache.Refresh (395ms)
-				TypeCache.ScanAssembly (370ms)
+		AnalyzeDomain (339ms)
+			TypeCache.Refresh (336ms)
+				TypeCache.ScanAssembly (314ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (1375ms)
+	FinalizeReload (1295ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1285ms)
+		SetupLoadedEditorAssemblies (1231ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (597ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (208ms)
-			ProcessInitializeOnLoadAttributes (343ms)
-			ProcessInitializeOnLoadMethodAttributes (130ms)
+			InitializePlatformSupportModulesInManaged (637ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (168ms)
+			ProcessInitializeOnLoadAttributes (285ms)
+			ProcessInitializeOnLoadMethodAttributes (132ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -176,8 +174,8 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  1.629 seconds
-Refreshing native plugins compatible for Editor in 2.08 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.528 seconds
+Refreshing native plugins compatible for Editor in 2.53 ms, found 3 plugins.
 Native extension for Android target not found
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
@@ -188,676 +186,36 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.484 seconds
-Domain Reload Profiling: 3110ms
-	BeginReloadAssembly (437ms)
+- Finished resetting the current domain, in  1.671 seconds
+Domain Reload Profiling: 3198ms
+	BeginReloadAssembly (407ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (26ms)
+		DisableScriptedObjects (15ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (53ms)
-	RebuildCommonClasses (89ms)
-	RebuildNativeTypeToScriptingClass (29ms)
-	initialDomainReloadingComplete (83ms)
-	LoadAllAssembliesAndSetupDomain (987ms)
-		LoadAssemblies (768ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (78ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (73ms)
+	LoadAllAssembliesAndSetupDomain (946ms)
+		LoadAssemblies (717ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (478ms)
-			TypeCache.Refresh (349ms)
-				TypeCache.ScanAssembly (322ms)
-			BuildScriptInfoCaches (103ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (1485ms)
+		AnalyzeDomain (493ms)
+			TypeCache.Refresh (344ms)
+				TypeCache.ScanAssembly (318ms)
+			BuildScriptInfoCaches (123ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1672ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1128ms)
+		SetupLoadedEditorAssemblies (1234ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (16ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (316ms)
-			ProcessInitializeOnLoadAttributes (675ms)
-			ProcessInitializeOnLoadMethodAttributes (110ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (320ms)
+			ProcessInitializeOnLoadAttributes (757ms)
+			ProcessInitializeOnLoadMethodAttributes (124ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.98 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6259 unused Assets / (4.7 MB). Loaded Objects now: 7087.
-Memory consumption went from 147.1 MB to 142.4 MB.
-Total: 14.092100 ms (FindLiveObjects: 0.812200 ms CreateObjectMapping: 0.586200 ms MarkObjects: 8.796100 ms  DeleteObjects: 3.895700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1090098.254077 seconds.
-  path: Assets/Scenes/GameScene.unity
-  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/GameScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dbafba3d70f8cfb9e47c9eedd2f0dca2') in 0.1314184 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 272.948469 seconds.
-  path: Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_0_Front+Z.png
-  artifactKey: Guid(0b5345cf23ab840779a8cbf1b89f355a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_0_Front+Z.png using Guid(0b5345cf23ab840779a8cbf1b89f355a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Client] Successfully resolved entitlement details
- -> (artifact id: 'ea742af7d0b34530911a43a477a73c12') in 0.2466222 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_0_Front+Z.png
-  artifactKey: Guid(87dff0577f22146db9255e2cf270d6ee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_0_Front+Z.png using Guid(87dff0577f22146db9255e2cf270d6ee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '88d9fb3bd6e9f0f2c7a21030e5f7a588') in 0.0380389 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_2_Left+X.png
-  artifactKey: Guid(4b922104744dc4f5ab309b556a7677da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_2_Left+X.png using Guid(4b922104744dc4f5ab309b556a7677da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4a8ab1eb96e52cf732123c9160cfcf72') in 0.0377242 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000083 seconds.
-  path: Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSkySettings.lighting
-  artifactKey: Guid(7b373da39b21e413f975bcf005681963) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSkySettings.lighting using Guid(7b373da39b21e413f975bcf005681963) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '713e7cf3ce0746cfdfa837ee70b3f856') in 0.0721383 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.mat
-  artifactKey: Guid(f2b5f3f20933f434e850db1b710542fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.mat using Guid(f2b5f3f20933f434e850db1b710542fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '10a1bc4f580d8851a1f955dcb0c8d34c') in 0.0716744 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_3_Right-X.png
-  artifactKey: Guid(1f225a337fa434ec1b937d9c8b70a667) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_3_Right-X.png using Guid(1f225a337fa434ec1b937d9c8b70a667) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6155b2326f58ea45cdd907c301d90e45') in 0.0347102 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low Equirect.mat
-  artifactKey: Guid(54fe2f000ad8f424fb63cc3ea0ae2bb2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low Equirect.mat using Guid(54fe2f000ad8f424fb63cc3ea0ae2bb2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '57b4341062fea89d950bbfd0c53ba7b3') in 0.054035 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_2_Left+X.png
-  artifactKey: Guid(c85a861fbad8f45169567bbfa332ecf8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_2_Left+X.png using Guid(c85a861fbad8f45169567bbfa332ecf8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fc8afba95f60fc69360e4861706ed070') in 0.034374 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/AllSkyFree/Deep Dusk/Deep Dusk Equirect.png
-  artifactKey: Guid(66e51860485ae4048a30f7e029e65af7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Deep Dusk/Deep Dusk Equirect.png using Guid(66e51860485ae4048a30f7e029e65af7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '59acfe30eda0e7826b84ee2e4574af9c') in 0.0587898 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_5_Down-Y.png
-  artifactKey: Guid(771300e956150427f8e4740c74cdd67e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_5_Down-Y.png using Guid(771300e956150427f8e4740c74cdd67e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5d324a438c96bf2bbbe5e0edd55196df') in 0.034036 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky.mat
-  artifactKey: Guid(aa78c8d403a8547fe86d1f74239e6b03) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky.mat using Guid(aa78c8d403a8547fe86d1f74239e6b03) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '125120bc9302eb581ba071e61586398e') in 0.0459544 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_4_Up+Y.png
-  artifactKey: Guid(a6e9f4ff100a94264a812ad74e17416c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_4_Up+Y.png using Guid(a6e9f4ff100a94264a812ad74e17416c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '47fe0770a5b27be69b99d07a5a681550') in 0.0338396 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/AllSkyFree/Night MoonBurst/Night Moon BurstSettings.lighting
-  artifactKey: Guid(d97b425c42fb94bd6b9c9ed101dc4078) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Night MoonBurst/Night Moon BurstSettings.lighting using Guid(d97b425c42fb94bd6b9c9ed101dc4078) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f4a8d31d483695906eb8f105a5b36908') in 0.029419 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_0_Front+Z.png
-  artifactKey: Guid(33dc9d88f32144697ba9777ee1aaae7b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_0_Front+Z.png using Guid(33dc9d88f32144697ba9777ee1aaae7b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3ffe86d7e61934be69352b389868b842') in 0.0320822 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_4_Up+Y.png
-  artifactKey: Guid(912bf47cb4f5f4c6ea43b7a8bd2eb0e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_4_Up+Y.png using Guid(912bf47cb4f5f4c6ea43b7a8bd2eb0e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ddbbd980115c49a2cf7db79923a7d176') in 0.0329995 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/AllSkyFree/Night MoonBurst/Night Moon Burst.mat
-  artifactKey: Guid(c494c335823f54b52b2e87e1b7a63a23) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Night MoonBurst/Night Moon Burst.mat using Guid(c494c335823f54b52b2e87e1b7a63a23) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '74bda75272296fff370db985d6e4be41') in 0.0423414 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/AllSkyFree/Epic_BlueSunset
-  artifactKey: Guid(6eb09a1750d2d4f609c0e79b804a9f3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Epic_BlueSunset using Guid(6eb09a1750d2d4f609c0e79b804a9f3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b0b3df8a9dfa03b6f600c36918492a82') in 0.0212476 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000086 seconds.
-  path: Assets/AllSkyFree/Deep Dusk
-  artifactKey: Guid(6e2365a3b549547b998c293780300ffe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Deep Dusk using Guid(6e2365a3b549547b998c293780300ffe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '601dd5653a45c7e507692e01e598c30e') in 0.0220958 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_FlagGreen.mat
-  artifactKey: Guid(0acfc71c325c54b92add0b07097b6c57) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_FlagGreen.mat using Guid(0acfc71c325c54b92add0b07097b6c57) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5c4cf109ca3a4adc33a1cc79daea039b') in 0.0513015 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_4_Up+Y.png
-  artifactKey: Guid(d6efad16563c1446d86a121dbb004300) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_4_Up+Y.png using Guid(d6efad16563c1446d86a121dbb004300) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6a832e1aa1cdbbf0ac6db09cf37707d0') in 0.0335299 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink Equirect.mat
-  artifactKey: Guid(fe4e130f9947345a2b213cb5038851a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink Equirect.mat using Guid(fe4e130f9947345a2b213cb5038851a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'da35f7ffc656b2ebb1dc9dc411b19d00') in 0.0390162 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_5_Down-Y.png
-  artifactKey: Guid(4164b771c2b784c2da3cbe10847a182e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_5_Down-Y.png using Guid(4164b771c2b784c2da3cbe10847a182e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bbdfabe554fd79a157719db99b4e14d1') in 0.0392351 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/AllSkyFree/_AllSkyFreeDemoEnvironment
-  artifactKey: Guid(4392334f044e44affbf9f5162eb718ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/_AllSkyFreeDemoEnvironment using Guid(4392334f044e44affbf9f5162eb718ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '32f63c9e8b4a4b02771ea51d1e892410') in 0.022205 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/AllSkyFree/Deep Dusk/Deep Dusk.unity
-  artifactKey: Guid(c8a48d1a6bbea47e981602e288f19742) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Deep Dusk/Deep Dusk.unity using Guid(c8a48d1a6bbea47e981602e288f19742) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6c5e38b5481438ae404c9a5c50bcf99a') in 0.02332 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/AllSkyFree/Cold Sunset/Cold SunsetSettings.lighting
-  artifactKey: Guid(8db10f414e5614f4bad830446841036c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cold Sunset/Cold SunsetSettings.lighting using Guid(8db10f414e5614f4bad830446841036c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '99b61d1b5ad4d1f4be9b226541f52ca2') in 0.0289959 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_0_Front+Z.png
-  artifactKey: Guid(402fe3aa91fba453f92dd3bbe820dbd9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_0_Front+Z.png using Guid(402fe3aa91fba453f92dd3bbe820dbd9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '763352e779f7216518862eb6709dd2e5') in 0.0328119 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_LightIllum.mat
-  artifactKey: Guid(ff33c7fce672541f095331a057da80f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_LightIllum.mat using Guid(ff33c7fce672541f095331a057da80f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bd0a905428a4f0b7388ba224229c9303') in 0.0269658 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/AllSkyFree/Cold Night/Cold Night__Cam_3_Right-X.png
-  artifactKey: Guid(2b201733d2df84602b3020984df58790) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cold Night/Cold Night__Cam_3_Right-X.png using Guid(2b201733d2df84602b3020984df58790) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0510203db9f4a74b1f53be9120f33d91') in 0.0327933 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_1_Back-Z.png
-  artifactKey: Guid(88710d7f2a0fa4bfeacbf7045be893fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_1_Back-Z.png using Guid(88710d7f2a0fa4bfeacbf7045be893fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd1ad86cd8f727af06b7e654091e6a684') in 0.0350188 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/AllSkyFree/Cold Night/Cold Night__Cam_1_Back-Z.png
-  artifactKey: Guid(7a03001a6d7c746a2a2467b3b3f51660) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cold Night/Cold Night__Cam_1_Back-Z.png using Guid(7a03001a6d7c746a2a2467b3b3f51660) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '73eeb33f469a3115b45e71403eb21546') in 0.0339738 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_0_Front+Z.png
-  artifactKey: Guid(5cd44424375bd4ad69191a50c41ec04d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_0_Front+Z.png using Guid(5cd44424375bd4ad69191a50c41ec04d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '82dcfd956596ff182ad828b5e294c8cc') in 0.0317325 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_4_Up+Y.png
-  artifactKey: Guid(93ce6277acd7243f685c04cc3c1d0cc4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_4_Up+Y.png using Guid(93ce6277acd7243f685c04cc3c1d0cc4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '18219907cf175a98994d3d4c45cccd31') in 0.0345934 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment_Light.fbx
-  artifactKey: Guid(d9ad0f74d68824711bc800186cf63d22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment_Light.fbx using Guid(d9ad0f74d68824711bc800186cf63d22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ef26433014a670f30dc1f0e77ce67180') in 0.1394685 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/AllSkyFree/Cold Night/Cold Night__Cam_2_Left+X.png
-  artifactKey: Guid(3aa922ca8577f4f66b8810ab41310933) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cold Night/Cold Night__Cam_2_Left+X.png using Guid(3aa922ca8577f4f66b8810ab41310933) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '039ccb040c8c128d6adeb25c422eecfb') in 0.0351787 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_LightMetal.mat
-  artifactKey: Guid(3e33a38e2349f447d9fb9ae62269009c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_LightMetal.mat using Guid(3e33a38e2349f447d9fb9ae62269009c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd69052bc8fa77abe627f396a8183a208') in 0.0291223 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Landscape.mat
-  artifactKey: Guid(010dd68491d1d4a1692a6d2272e5cb69) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Landscape.mat using Guid(010dd68491d1d4a1692a6d2272e5cb69) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7c33bc5b88d9297a25d4ed09ae373938') in 0.0269525 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunsetSettings.lighting
-  artifactKey: Guid(0b29808cfe8e0446eb1cdc1105c409b2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunsetSettings.lighting using Guid(0b29808cfe8e0446eb1cdc1105c409b2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0708756f2a716888056077a37abc81ed') in 0.028461 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/AllSkyFree/Epic_GloriousPink
-  artifactKey: Guid(edc1859f6d31046c9936ffb1609fabeb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Epic_GloriousPink using Guid(edc1859f6d31046c9936ffb1609fabeb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c4e307af6b95c4402686b39ca8552e8c') in 0.0218741 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_1_Back-Z.png
-  artifactKey: Guid(33cbefefe2c7f4e77ac959c74eef5d4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_1_Back-Z.png using Guid(33cbefefe2c7f4e77ac959c74eef5d4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'be7256d1edc57894638cdfa85e4c69a9') in 0.0322345 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/AllSkyFree/Cold Night/Cold Night Equirect.mat
-  artifactKey: Guid(eac2ef371405749e0bd050b4c3272f16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cold Night/Cold Night Equirect.mat using Guid(eac2ef371405749e0bd050b4c3272f16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '69d40d17ff1d727a198d61b69c002015') in 0.0499337 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000073 seconds.
-  path: Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Equirect.png
-  artifactKey: Guid(d4c8dc343ae5d4673b7720ffdb1ddf00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Equirect.png using Guid(d4c8dc343ae5d4673b7720ffdb1ddf00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '741a7a19c358e500918c40a9b7ab6d72') in 0.0553557 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/AllSkyFree/Cold Night/Cold Night.unity
-  artifactKey: Guid(8c6f0d7d2a576443a92d35db4d83c4da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cold Night/Cold Night.unity using Guid(8c6f0d7d2a576443a92d35db4d83c4da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f45fb004274768dfaefafeb7c962a2a9') in 0.035107 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet Equirect.mat
-  artifactKey: Guid(13f6e5eed33d84c76979f1ec06b5e48c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet Equirect.mat using Guid(13f6e5eed33d84c76979f1ec06b5e48c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '01619848eaae21f5acd678ea6584be9d') in 0.0389335 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_LowSettings.lighting
-  artifactKey: Guid(77b131decc7b844ddbe504ff94c11c56) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_LowSettings.lighting using Guid(77b131decc7b844ddbe504ff94c11c56) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '36f886bb07b1c1e59d53b23e2abe38b4') in 0.0312218 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000084 seconds.
-  path: Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_5_Down-Y.png
-  artifactKey: Guid(2e38ed7c39e8e4314930da8a86ae7a88) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_5_Down-Y.png using Guid(2e38ed7c39e8e4314930da8a86ae7a88) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '304470ce2e04c212bf13be28c41a11dd') in 0.0344857 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_5_Down-Y.png
-  artifactKey: Guid(e23c4e30896d34af5beb066fcf2790c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_5_Down-Y.png using Guid(e23c4e30896d34af5beb066fcf2790c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a3db0d83fec102cc28084e8e8463b18a') in 0.0366407 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/AllSkyFree/Cold Sunset/Cold Sunset.unity
-  artifactKey: Guid(f87b863005c8d4abcb743cad9f6566a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cold Sunset/Cold Sunset.unity using Guid(f87b863005c8d4abcb743cad9f6566a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1cb6e67abdd4685cdad8073b38c59a2b') in 0.0229155 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_3_Right-X.png
-  artifactKey: Guid(d3b809c8b33ff46faa4245f0bca7e6fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_3_Right-X.png using Guid(d3b809c8b33ff46faa4245f0bca7e6fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '639656ec41a4eb867ab6cbfd0fb0f2ef') in 0.03474 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/AllSkyFree
-  artifactKey: Guid(72589719770b04ead999af902c0459f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree using Guid(72589719770b04ead999af902c0459f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'da2a0ea5c8378c8e0c1f803a57d764d9') in 0.0225731 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment_Center.fbx
-  artifactKey: Guid(258cb4865d37b4292be3195af50aaa8c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment_Center.fbx using Guid(258cb4865d37b4292be3195af50aaa8c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9d22ea4a4b5105a07c18b2fd2597383e') in 0.0574744 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Assets/AllSkyFree/Cold Sunset/Cold Sunset Equirect.mat
-  artifactKey: Guid(01f4eb1c73693428d923f1520032e7f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cold Sunset/Cold Sunset Equirect.mat using Guid(01f4eb1c73693428d923f1520032e7f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4ad2da0a390e6b4f0146793fe16f4f3e') in 0.0455593 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.png
-  artifactKey: Guid(c8f21f62fdb3e43c5b32917c84683698) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.png using Guid(c8f21f62fdb3e43c5b32917c84683698) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9dcfd619de8feabe5700518887f9ee65') in 0.050643 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/AllSkyFree/_AllSkyFree_Documentation.pdf
-  artifactKey: Guid(f6f10bad0f589486893b6f1b8f9fdeb4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/_AllSkyFree_Documentation.pdf using Guid(f6f10bad0f589486893b6f1b8f9fdeb4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'acab02216cc9e11d91f92e0e08dbe9af') in 0.0220545 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment02.fbx
-  artifactKey: Guid(e8f07670fb0274e35a65e6e98594a930) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment02.fbx using Guid(e8f07670fb0274e35a65e6e98594a930) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '10a1471cf7afcce1d753042698a5e831') in 0.0673127 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_3_Right-X.png
-  artifactKey: Guid(ca9af6b5ce9284592aabb781392ff61e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_3_Right-X.png using Guid(ca9af6b5ce9284592aabb781392ff61e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ceda17713151b367f558588e1029f5c4') in 0.0367725 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_2_Left+X.png
-  artifactKey: Guid(604c8e250817f485c97f85e8237f7524) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_2_Left+X.png using Guid(604c8e250817f485c97f85e8237f7524) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '77ceaa57023147838a48d419d2423177') in 0.0468161 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_3_Right-X.png
-  artifactKey: Guid(47551dad0d90646a9a5dac436076f38a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_3_Right-X.png using Guid(47551dad0d90646a9a5dac436076f38a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '349ae69706b33456d090c1fa1fc0168f') in 0.0383879 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_MountainGlow.mat
-  artifactKey: Guid(1d924399aa96d4378b9c507b7669a4f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_MountainGlow.mat using Guid(1d924399aa96d4378b9c507b7669a4f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3702d9776126a7d44029f1fc04699d39') in 0.0264741 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_2_Left+X.png
-  artifactKey: Guid(c35d875303c454b9a8acaae0f7800313) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_2_Left+X.png using Guid(c35d875303c454b9a8acaae0f7800313) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '109fca2b047c9dfddd45e897f9813746') in 0.0342974 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset.mat
-  artifactKey: Guid(7416536dbe0334cfd888dd1beb75a9fb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset.mat using Guid(7416536dbe0334cfd888dd1beb75a9fb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5dcd8714346e8872f25f231f1b4a05d1') in 0.0428549 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/AllSkyFree/Cold Night/Cold Night__Cam_5_Down-Y.png
-  artifactKey: Guid(8cab6aa3331da40e68754e2214ce08fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cold Night/Cold Night__Cam_5_Down-Y.png using Guid(8cab6aa3331da40e68754e2214ce08fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '321b8f429588e1b10f677453220a67e9') in 0.0366159 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.unity
-  artifactKey: Guid(5d6a31542c4b5409faf229e819f55341) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.unity using Guid(5d6a31542c4b5409faf229e819f55341) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e3711c0e915bbba8fde70180422ffbfa') in 0.0266974 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanetSettings.lighting
-  artifactKey: Guid(30d83a83fcc484f9d8b0d2915bb839b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanetSettings.lighting using Guid(30d83a83fcc484f9d8b0d2915bb839b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '16f91adf830d24701f23a15b136ef154') in 0.0309507 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/AllSkyFree/Cold Sunset/Cold Sunset.mat
-  artifactKey: Guid(2d796ced94d61438fbab81b194038162) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cold Sunset/Cold Sunset.mat using Guid(2d796ced94d61438fbab81b194038162) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '11746d39437f5e0da0545799dad6f77b') in 0.0461094 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_3_Right-X.png
-  artifactKey: Guid(0ccd1239645f54012a6ea72739d04982) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_3_Right-X.png using Guid(0ccd1239645f54012a6ea72739d04982) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '64abedb6abb9de32abc44b5597f70186') in 0.0372882 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_5_Down-Y.png
-  artifactKey: Guid(6458ffa0dcd6b4ea5b30ac5085d8c68a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_5_Down-Y.png using Guid(6458ffa0dcd6b4ea5b30ac5085d8c68a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fecdc2d9aae3c4580248d7ec157b75e9') in 0.0314212 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_4_Up+Y.png
-  artifactKey: Guid(d8144633fec3342d9b7d9388377fb2a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_4_Up+Y.png using Guid(d8144633fec3342d9b7d9388377fb2a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8784c293b8c660f2196d8ad88f596229') in 0.0334015 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_2_Left+X.png
-  artifactKey: Guid(6b8f010ba933d4f01bdedec2c1a8a025) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_2_Left+X.png using Guid(6b8f010ba933d4f01bdedec2c1a8a025) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '87b2937129bbad95868ddb325d44195c') in 0.0367551 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_4_Up+Y.png
-  artifactKey: Guid(544d3cf87e24a464fa433d08257479d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_4_Up+Y.png using Guid(544d3cf87e24a464fa433d08257479d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8ccc6765cb0552dccd3e57a5f9f969b3') in 0.0322824 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Blue.mat
-  artifactKey: Guid(8e64a72f2cb9c45bba4b11d98489b11f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Blue.mat using Guid(8e64a72f2cb9c45bba4b11d98489b11f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a78c996e6957a688f36fa663e7e1b220') in 0.0289614 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_4_Up+Y.png
-  artifactKey: Guid(c9658c52dbf374bf6aeeb26310f71145) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_4_Up+Y.png using Guid(c9658c52dbf374bf6aeeb26310f71145) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a285f7a8b4c833a5d09483a93c1b9bca') in 0.0334473 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/AllSkyFree/Cold Night/Cold NightSettings.lighting
-  artifactKey: Guid(b4002c553459e4873859bae63980d866) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/Cold Night/Cold NightSettings.lighting using Guid(b4002c553459e4873859bae63980d866) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b90686048f63a9dfdcb545a44652ca5b') in 0.0262241 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/rock.mat
-  artifactKey: Guid(ffaea37946c7c8c448afb4fbe70ef8aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/rock.mat using Guid(ffaea37946c7c8c448afb4fbe70ef8aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f812dc13ed9dfd58448ad5ccad92655f') in 0.0283837 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 55.159195 seconds.
-  path: Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment.fbx
-  artifactKey: Guid(3ca2c2ce56b9e44f598f5de419ce4e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment.fbx using Guid(3ca2c2ce56b9e44f598f5de419ce4e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '288fd5c737dd536525a172fa5d6cc8d4') in 1.0154839 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment_Light.fbx
-  artifactKey: Guid(d9ad0f74d68824711bc800186cf63d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment_Light.fbx using Guid(d9ad0f74d68824711bc800186cf63d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5c331c8b6410e41736b95c88a2ed9ebf') in 0.1048145 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 52.647763 seconds.
-  path: Assets/AllSkyFree/Cold Night/Cold Night Equirect.mat
-  artifactKey: Guid(eac2ef371405749e0bd050b4c3272f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllSkyFree/Cold Night/Cold Night Equirect.mat using Guid(eac2ef371405749e0bd050b4c3272f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e2be04b1dd0a01f4243613149c079da') in 0.2094924 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/AllSkyFree/Cold Night/Cold Night__Cam_2_Left+X.png
-  artifactKey: Guid(3aa922ca8577f4f66b8810ab41310933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllSkyFree/Cold Night/Cold Night__Cam_2_Left+X.png using Guid(3aa922ca8577f4f66b8810ab41310933) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f15f574b2d5b17de8f853969d89f08d4') in 0.0423788 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+		AwakeInstancesAfterBackupRestoration (16ms)
